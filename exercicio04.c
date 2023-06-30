@@ -6,6 +6,24 @@
 
 int main ()
 {
+    int vet[10];
+    int i;
+    int *p = vet;
+
+    printf("Digite 10 numeros inteiros.\n");
+
+    for(i = 0; i < 10; i++)
+    {
+        scanf("%d", &vet[i]);
+    }
+
+    //mostrar o endereco e conteudo
+
+    for(i = 0; i < 10; i++)
+    {
+        printf("Endereco: %p\n", &vet[i] );
+        printf("Conteudo: %d\n", vet[i]);
+    }
 
 
 
